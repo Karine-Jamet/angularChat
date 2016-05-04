@@ -1,0 +1,29 @@
+body{
+  text-align: center;
+}
+
+section {
+  margin: auto;
+  display: inline-block;
+  width: 25vw;
+  height: 80vh;
+  border: 1px solid black;
+  vertical-align: bottom;
+}
+
+.connexion{
+  margin-top: 30vh;
+}
+
+.connected {
+  height: 100%;
+  width: 100%;
+}
+.chatText{
+  padding: 20px;
+  height: 80%;
+  width: 100%;
+}
+form{
+  display: inline-block;
+}

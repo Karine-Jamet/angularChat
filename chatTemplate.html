@@ -1,0 +1,16 @@
+<section>
+  <div class="connexion" ng-if="!connexion">
+    <h2>What's your name ?</h2>
+    <form ng-submit="toConnect(userName)">
+      <input type="text" ng-model="userName" />
+    </form>
+  </div>
+  <div class="connected" ng-if="connexion">
+    <div class="chatText">
+      <p ng-repeat="phrase in messageToPrint">{{phrase}}</p>
+    </div>
+    @{{userName}}<form ng-submit="sendMessage(chatPhrase)">
+      <input type="text" ng-model="chatPhrase" />
+    </form>
+  </div>
+</section>
